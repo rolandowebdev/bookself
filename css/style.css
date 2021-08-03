@@ -1,0 +1,400 @@
+@import url('https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css');
+
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    color: white;
+    text-align: center;
+    background: linear-gradient(to right top, #001e6c, #002c78, #003983, #00468d, #035397);
+}
+
+.container-hero {
+    text-align: left;
+    align-items: center;    
+    display: flex;
+    padding: 0 20%;
+    justify-content: center;
+}
+
+.heroImage {
+    width: 40%;
+    order: 2;
+}
+
+.description {
+    order: 1;
+}
+
+
+
+.wrapper {
+    display: flex;
+    align-items: flex-start;
+}
+
+.books-container {
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    margin: 20px;
+    background: #B6C9F0;
+    padding: 16px;
+}
+
+.action-container {
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    margin: 20px;
+    background: #B6C9F0;
+    padding: 0 0 16px 0;
+}
+
+.column-container {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 30%;
+}
+
+.unread-container {
+    flex-basis: 35%;
+}
+
+.read-container {
+    flex-basis: 35%;
+}
+
+
+
+
+.information-container {
+    display: flex;
+    align-items: center;
+}
+
+.information-container .card {
+    background: linear-gradient(to right top, #001e6c, #002c78, #003983, #00468d, #035397);
+    margin: auto;
+    padding: 1px 33px;
+    text-align: center;
+    border-top-left-radius: 30%;
+    border-bottom-right-radius: 30%;
+}
+
+.information-container .card .text-info {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 24px;
+    color: #fff;
+}
+
+
+
+.card-bookself {
+    border-radius: 16px;
+    transition: .5s;
+    margin-top: 16px;
+    padding: 12px 24px;
+    background: #fff;
+    color: #185ADB;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-bookself:hover {
+    transform:scale(0.9);
+}
+
+.card-bookself > .detail-information h2 {
+    font-size: 22px;
+    margin-bottom: unset;
+}
+
+.card-bookself > .detail-information p {
+    color: #035397;
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+.card-bookself > .detail-information small {
+    margin-top: 10px;
+}
+
+
+
+
+.form-wrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 999;
+    background-color: rgba(203, 209, 243, 0.7);
+    backdrop-filter: blur(3px);
+    -webkit-backdrop-filter: blur(4px);
+    display: none;
+    transition: 1s all;
+    transition-property: color;
+    justify-content: center;
+    align-items: center;
+}
+
+.form {
+    display: flex;
+    padding: 16px;
+    flex-direction: column;
+    border-radius: 16px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group label {
+    margin-bottom: 4px !important;
+    font-size: 18px !important;
+    font-weight: lighter !important;
+}
+
+.form-open {
+    transition: 1s all !important;
+    transition-property: color !important;
+    display: flex !important;
+}
+
+input[type=text],
+input[type=date] {
+    background: #F5F1FF;
+    border: 2px solid #185ADB;
+    color: #185ADB;
+    border-radius: 10px;
+    padding: 16px;
+    box-sizing: border-box;
+    margin-bottom: 8px;
+    font-size: 24px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+input[type=text],
+input[type=date],
+.btn-submit:focus{
+    outline: none;
+}
+
+
+
+
+
+button.button-style { 
+    background: #035397;
+    width: fit-content;
+    border: none;
+    border-radius: 50%;
+    padding: 20px; 
+    color: #fff;
+    font-size: 18px;
+    margin: 25px 20px;
+    align-self: flex-start;
+    cursor: pointer;
+    transition: 0.5s;
+    margin: 10px auto;
+}
+
+button.button-style:hover {
+    background: linear-gradient(to right top, #001e6c, #002c78, #003983, #00468d, #035397);
+    color: #fff;
+    transform:scale(1.1);
+}
+
+
+button.btn-close{
+    background: none;
+    border: none; 
+    align-self: flex-start;
+    cursor: pointer;
+}
+
+
+i.fa-times{
+    color:  #003983;
+    font-size: 36px;
+    transition: 0.5s;
+}
+
+i.fa-times:hover{
+    transform: scale(1.2);
+}
+
+
+
+
+.big-font {
+    font-family: 'Ubuntu', sans-serif;
+    color:  #003983;
+}
+
+.shadow {
+    box-shadow: 0 5px 10px rgba(154, 160, 185, .05), 0 15px 40px rgba(166, 173, 201, .2);
+}
+
+.text-center {
+    text-align: center;
+}
+
+.hero-font {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 40px;
+}
+
+.desc-font {
+    line-height: 1.5;
+}
+
+::placeholder { 
+    color: #185adb;
+    opacity: 1; 
+}
+
+::-webkit-calendar-picker-indicator {
+    opacity: 0.5;
+  }
+
+
+  
+.read-button {
+    font-family: uicons-regular-rounded;
+    content: '\f143';
+    padding: 10px;
+    background: linear-gradient(to left bottom, #3edbf0, #3ad1f6, #49c5f9, #5fb9f7, #77acf1);
+    border: none;
+    border-radius: 100%;
+    outline: none;
+    width: 25px;
+    height: 25px;
+    margin-left: auto;
+    box-sizing: content-box;
+    color: white;
+    transition-property: color;
+    transition: .5s;
+    opacity: .9;
+  }
+  
+  .read-button:before {
+      content: '\f143';
+  }
+
+
+  .unread-button {
+    font-family: uicons-regular-rounded;
+    content: '\f1ff';
+    padding: 10px;
+    background: linear-gradient(to left bottom, #185adb, #4857d1, #5e55c7, #6e53bd, #7952b3);
+    border-radius: 100%;
+    transition-property: color;
+    transition: .5s;
+    border: none;
+    outline: none;
+    width: 25px;
+    height: 25px;
+    margin-left: auto;
+    box-sizing: content-box;
+    color: white;
+    opacity: .9;
+    
+  }
+
+  .unread-button:before {
+      content: '\f1ff';
+  }
+
+
+  
+  .trash-book {
+    font-family: uicons-regular-rounded;
+    content: '\f24a';
+    padding: 10px;
+    transition: .5s;
+    background: linear-gradient(to left bottom, #f21170, #fc175c, #ff2946, #ff3d2c, #ff5200);
+    border-radius: 50%;
+    border: none;
+    outline: none;
+    width: 25px;
+    height: 25px;
+    margin: 0 10px 0 20px;
+    box-sizing: content-box;
+    color: white;
+    opacity: .9;
+  }
+  
+  .trash-book:before {
+      content: '\f24a';
+  }
+
+
+  .read-button:hover,
+  .unread-button:hover,
+  .trash-book:hover {
+    cursor: pointer;
+    transform: scale(1.3);
+  }
+  
+
+@media only screen and (max-width: 1024px) {
+    
+    .container-hero {
+       flex-direction: column;
+       padding: 10px 15%;
+    }
+
+    .heroImage{
+        width: 100%;    
+        order: 1;
+    }
+
+    .description{
+        order: 2;
+    }
+
+    .wrapper {
+        align-items: center;
+        flex-direction: column;
+        padding: 40px 20px;
+    }
+
+    .wrapper .action-container {
+        align-items: center;
+        width: 100%;
+    }
+
+    .books-container{
+        align-items: center;
+        width: 100%;
+    }
+
+    .column-container{
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .list-item {
+        width: 90%;
+    }
+
+    .form {
+        width: 100%;
+    }
+
+}

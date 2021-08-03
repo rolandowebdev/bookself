@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bookself.</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Ubuntu&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css" integrity="sha256-46r060N2LrChLLb5zowXQ72/iKKNiw/lAmygmHExk/o=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#fff" fill-opacity="1" d="M0,32L60,74.7C120,117,240,203,360,208C480,213,600,139,720,128C840,117,960,171,1080,170.7C1200,171,1320,117,1380,90.7L1440,64L1440,0L1380,0C1320,0,1200,0,1080,0C960,0,840,0,720,0C600,0,480,0,360,0C240,0,120,0,60,0L0,0Z"></path></svg>
+        <div class="container-hero">
+            <img class="heroImage" src="assets/library.png" alt="companyProfile">
+            <div class="description">
+                <h1 class="hero-font">Bookself.</h1>
+                <p class="desc-font">Selamat datang di aplikasi pengeloaan buku <b>Bookself</b>. Kelola buku jadi lebih mudah!</p>
+            </div>
+        </div>
+    </header>
+
+    <div class="wrapper">
+        <div class="column-container">
+            <div class="action-container shadow">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#fff" fill-opacity="1" d="M0,32L60,74.7C120,117,240,203,360,208C480,213,600,139,720,128C840,117,960,171,1080,170.7C1200,171,1320,117,1380,90.7L1440,64L1440,0L1380,0C1320,0,1200,0,1080,0C960,0,840,0,720,0C600,0,480,0,360,0C240,0,120,0,60,0L0,0Z"></path></svg>
+                <h2 class="big-font text-center">Tambah Bookself</h2>
+                <button type="submit" value=" " name="addBook" class="popup button-style" id="add-book"><i class="fas fa-plus fa-lg"></i></button>
+            </div>
+    
+            <div class="action-container shadow">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#fff" fill-opacity="1" d="M0,32L60,74.7C120,117,240,203,360,208C480,213,600,139,720,128C840,117,960,171,1080,170.7C1200,171,1320,117,1380,90.7L1440,64L1440,0L1380,0C1320,0,1200,0,1080,0C960,0,840,0,720,0C600,0,480,0,360,0C240,0,120,0,60,0L0,0Z"></path></svg>
+                <h2 class="big-font text-center">Jumlah Bookself</h2>
+                <div class="information-container">
+                    <div class="card shadow allbook">
+                        <h3 class="text-info" id="allbooks"></h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="books-container unread-container">
+            <h2 class="big-font text-center">Belum dibaca</h2>
+            <div class="list-item" id="unread">
+            
+            </div>
+        </div>
+
+        <div class="books-container read-container">
+            <h2 class="big-font text-center">Sudah dibaca</h2>
+            <div class="list-item" id="read">
+              
+            </div>
+        </div>
+    </div>
+
+
+    <div id="form-container" class="form-wrapper">
+        <div class="books-container">
+            <button type="reset" value="Close" class="btn-close" id="close"><i class="fas fa-times fa-lg" ></i></button>
+            <h2 class="big-font text-center">Bookself Apps</h2>
+            <form class="form" action="#" id="form">
+                <div class="form-group">
+                    <label for="title" class="big-font">Judul Buku</label>
+                    <input type="text" id="title" name="title" placeholder="Title" autocomplete="off" required>
+                </div>
+                <div class="form-group">
+                    <label for="author" class="big-font">Author</label>
+                    <input type="text" id="author" name="author" placeholder="Author" autocomplete="off" required>
+                </div>
+                <div class="form-group">
+                    <label for="date" class="big-font">Tahun</label>
+                    <input type="date" id="year" name="date" placeholder="Date" autocomplete="off" required>
+                </div>
+                    <button type="submit" value=" " name="addBook" class="button-style"> <i class="fas fa-book-medical fa-lg"></i></button>
+            </form>
+        </div>  
+    </div>
+
+
+    <script src="js/storage.js" type="text/javascript"></script>
+    <script src="js/bookself.js" type="text/javascript"></script>
+    <script src="js/script.js" type="text/javascript"></script>
+</body>
+
+</html>

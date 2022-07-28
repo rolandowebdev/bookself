@@ -1,3 +1,3 @@
-# bookself.github.io
+# Bookself
 Applikasi Pengelolaan Buku
-![Screenshoot](assets/Screenshot (6).png)
+![Bookself Preview](assets/bookself.png)
